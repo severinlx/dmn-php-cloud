@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Select Tickets characteristics</title>
+<link rel="stylesheet" href="//cdn.rawgit.com/yegor256/tacit/gh-pages/tacit-css-1.2.5.min.css"/>
+</head>
+<body>
+<form method="post" action="logic.php">
+<br/>
+
+
+<h2> Select the boxes bellow, to find out whom the ticket will be address to.</h2>
+<br/>
+<h4> An email will be send with the ticket link to the person.</h4>
+<h6>Give in Tickets number or link</h6>
+<input type="text" name="id"><br>
+<h6>Select Tickets priority</h6>
+<select name="priority">
+  <option value="high">high</option>
+  <option value="medium">medium</option>
+  <option value="low">low</option>
+</select>
+
+<h6>Select Tickets difficulty</h6>
+<select name="difficulty">
+  <option value="high">high</option>
+  <option value="medium">medium</option>
+  <option value="low">low</option>
+</select>
+
+<h6>Select environment</h6>
+<select name="environment">
+  <option value="staging">staging</option>
+  <option value="production">production</option>
+</select>
+<br/>
+<input type="submit" name="submit" Value="Submit"/>
+</form>
+</body>
+</html>
